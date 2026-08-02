@@ -76,7 +76,7 @@ async function apiCall(apiKey, system, user, maxT=4000) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-5-20260630',
       max_tokens: maxT,
       system,
       messages: [{ role: 'user', content: user }]
